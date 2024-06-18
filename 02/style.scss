@@ -1,0 +1,62 @@
+// @use 'theme-1' as *;
+@use 'theme-2' as *;
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $base-color;
+    color: #FFF;
+    font-size: 125%;
+    font-family: $main-font;
+}
+
+header {
+    border: 1px solid $border-color;
+    padding: 1em;
+    text-align: center;
+    font-family: $secondary-font;
+    font-size: 150%;
+}
+
+main {
+    text-align: center;
+    border: 2px solid $border-color;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .item {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $border-color;
+        font: {
+            size: 175%;
+            weight: bold;
+        }
+        color: $warning-color;
+        box-shadow: $box-shadow;
+    }
+}
+
+
+@media screen and (width < 570px) {
+    main, body {
+        height: auto;
+    }
+    .container {
+        gap: 10;
+        padding: 2em;
+    }
+}

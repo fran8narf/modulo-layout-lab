@@ -1,0 +1,68 @@
+@use 'base' as *;
+@use "sass:map";
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    padding: 1em;
+}
+.container {
+    box-sizing: border-box;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em 1em;
+    background-color: khaki;
+    width: 100%;
+}
+
+.box {
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font: {
+        weight: bold;
+    }
+}
+
+.base-color-1 {
+    background-color: map-get($colors, 1);
+}
+.base-color-2 {
+    background-color: map-get($colors, 2);
+}
+.base-color-3 {
+    background-color: map-get($colors, 3);
+}
+
+$i: 1;
+@while $i <= 3 {
+    .container-#{$i} {
+        $j: 1;
+        $color: map-get($colors, $i);
+        @while $j <=4 {
+            div.lighten-#{$j} {
+            // @include color-enlight($color, $j * 5%);
+            background-color: lighten($color, $j * 7%)
+            }
+            div.darken-#{$j} {
+            // @include color-darken($color, $j * 5%);
+            background-color: darken($color, $j * 7%)
+            }
+            $j: $j + 1;
+        }
+    }
+    $i: $i+1;
+}

@@ -1,0 +1,144 @@
+body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header {
+  padding: 1em;
+}
+
+.container {
+  box-sizing: border-box;
+  background-color: khaki;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  padding: 3em 1em;
+  display: flex;
+}
+
+.box {
+  color: #fff;
+  border: 3px solid #000;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+  display: flex;
+}
+
+.base-color-1 {
+  background-color: #ff1e1e;
+}
+
+.base-color-2 {
+  background-color: #02b83c;
+}
+
+.base-color-3 {
+  background-color: #cfd238;
+}
+
+.container-1 div.lighten-1 {
+  background-color: #ff4242;
+}
+
+.container-1 div.darken-1 {
+  background-color: #f90000;
+}
+
+.container-1 div.lighten-2 {
+  background-color: #ff6565;
+}
+
+.container-1 div.darken-2 {
+  background-color: #d60000;
+}
+
+.container-1 div.lighten-3 {
+  background-color: #ff8989;
+}
+
+.container-1 div.darken-3 {
+  background-color: #b20000;
+}
+
+.container-1 div.lighten-4 {
+  background-color: #ffadad;
+}
+
+.container-1 div.darken-4 {
+  background-color: #8e0000;
+}
+
+.container-2 div.lighten-1 {
+  background-color: #02db48;
+}
+
+.container-2 div.darken-1 {
+  background-color: #029530;
+}
+
+.container-2 div.lighten-2 {
+  background-color: #05fc54;
+}
+
+.container-2 div.darken-2 {
+  background-color: #017125;
+}
+
+.container-2 div.lighten-3 {
+  background-color: #28fd6c;
+}
+
+.container-2 div.darken-3 {
+  background-color: #014e19;
+}
+
+.container-2 div.lighten-4 {
+  background-color: #4cfd84;
+}
+
+.container-2 div.darken-4 {
+  background-color: #002b0e;
+}
+
+.container-3 div.lighten-1 {
+  background-color: #d6d955;
+}
+
+.container-3 div.darken-1 {
+  background-color: #b9bc2a;
+}
+
+.container-3 div.lighten-2 {
+  background-color: #dddf72;
+}
+
+.container-3 div.darken-2 {
+  background-color: #9c9f24;
+}
+
+.container-3 div.lighten-3 {
+  background-color: #e4e68f;
+}
+
+.container-3 div.darken-3 {
+  background-color: #80821d;
+}
+
+.container-3 div.lighten-4 {
+  background-color: #ebecac;
+}
+
+.container-3 div.darken-4 {
+  background-color: #636417;
+}
+/*# sourceMappingURL=index.33ea5417.css.map */

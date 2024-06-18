@@ -1,0 +1,14 @@
+$colors: (
+  1: #ff1e1e,
+  2: #02b83c,
+  3: #cfd238,
+  4: #F2EFE9
+);
+
+@mixin color-enlight($color, $percentage) {
+  background-color: lighten($color, $percentage);
+}
+
+@mixin color-endark($color, $percentage) {
+  background-color: darken($color, $percentage);
+}

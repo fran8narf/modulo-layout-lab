@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04</title>
+    <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+    <header>
+        <h1>Grid Card</h1>
+        <a href="../index.html">Go back</a>
+    </header>
+    <div class="card-container">
+        <div class="card">
+            <img src="./assets/h.gif" alt="Yamato thunder bagua">
+            <h1>Yamato</h1>
+            <p>In the image we can see Yamato using her most powerful skill, <i>Thunder Bagua</i>.</p>
+            <p class="date">Published <strong>18/06/2024</strong></p>
+            <button>More info</button>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.card button').addEventListener('mouseover', function() {
+        this.closest('.card').style.borderColor = '#f76d6d';
+    });
+
+    document.querySelector('.card button').addEventListener('mouseout', function() {
+        this.closest('.card').style.borderColor = '#4d7cffca';
+    });
+</script>
+</html>
