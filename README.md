@@ -7,3 +7,5 @@ Desde cada ejercicio se puede navegar hacia la ***Home***.
 La ejecución del proyecto para visualizar todo correctamente debe realizarse desde el directorio raiz con el siguiente comando apuntando al archivo **index.html**:
 
 `npx parcel index.html`
+
+Aunque por si acaso, se ha subido la carpeta ***dist*** con todo compilado.
